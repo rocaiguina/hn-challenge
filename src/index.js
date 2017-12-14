@@ -85,5 +85,5 @@ const state = {
   }
 }
 
-ReactDOM.render(<App item={state.item}/>, document.getElementById('root'));
+ReactDOM.render(<App item={state.item} />, document.getElementById('root'));
 registerServiceWorker();
