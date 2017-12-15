@@ -1,33 +1,18 @@
 import React from 'react';
 
+const Comment = ({by, time, text, comments}) => (
+  <div className="comment padding-1h">
+    <div className="comment__metadata">
+      <span className="orange"><i className="fa fa-fw fa-user"></i>{by}</span>
+      <span><i className="fa fa-fw fa-hourglass-o"></i>{time}</span>
+    </div>
+    <p>{text}</p>
+    {comments.map(comment => <Comment key={comment.id} {...comment} />)}
+  </div>
+)
+
 export default (props) => (
   <div className="story__comments">
-    {props.item.comments.map(comment => (
-      <div className="comment padding-1h" key={comment.id}>
-        <div className="comment__metadata">
-          <span className="orange"><i className="fa fa-fw fa-user"></i>{comment.by}</span>
-          <span><i className="fa fa-fw fa-hourglass-o"></i>{comment.time}</span>
-        </div>
-        <p>{comment.text}</p>
-        {comment.comments.map (comment => (
-          <div className="comment__reply" key={comment.id}>
-          <div className="comment__metadata padding-1h">
-            <span className="orange"><i className="fa fa-fw fa-user"></i>{comment.by}</span>
-            <span><i className="fa fa-fw fa-hourglass-o"></i>{comment.time}</span>
-          </div>
-          <p>{comment.text}</p>
-          {comment.comments.map (comment => (
-          <div className="comment__reply" key={comment.id}>
-          <div className="comment__metadata padding-1h">
-            <span className="orange"><i className="fa fa-fw fa-user"></i>{comment.by}</span>
-            <span><i className="fa fa-fw fa-hourglass-o"></i>{comment.time}</span>
-          </div>
-          <p>{comment.text}</p>
-        </div>
-        ))}
-        </div>
-        ))}
-      </div>
-    ))}
+    {props.comments.map(comment => <Comment key={comment.id} {...comment} />)}
   </div>
 )

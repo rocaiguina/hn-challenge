@@ -15,7 +15,7 @@ export default (props) => (
         <span className="truncate"><i className="fa fa-fw fa-external-link"></i>{props.item.url}</span>
       </div>
     </div>
-    <Comments item={props.item} />
+    <Comments comments={props.item.comments} />
   </div>
   
   
