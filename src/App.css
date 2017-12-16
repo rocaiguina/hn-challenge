@@ -92,7 +92,7 @@ span {
   color: #989795;
 }
 
-.comment:nth-child(n+2) {
+.comment > .comment {
   border-width: 1px 1px 1px 20px;
   border-style: solid;
   border-color: #F3F0ED; 

@@ -9,7 +9,11 @@ class App extends Component {
     return (
       <div className="container">
         <Header />
-        <Story item={this.props.item}/>
+        <Story 
+          story={this.props.story}
+          comments={this.props.comments}
+          users={this.props.users}
+          />
       </div>
     );
   }

@@ -5,85 +5,65 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 const state = {
-  item: { 
-    by: 'jodosha', 
-    descendants: 234, 
-    id: 1, 
-    comments: [
+  entities: {
+    stories: [
       {
-      by: 'edw519',
-      id: 2,
-      comments: [
-        {
-        by: 'edw519 comment reply 1',
-        id: 4,
-        comments: [
-          {
-            by: 'edw519 comment reply 1 reply',
-            id: 10,
-            comments: [],
-            parent: 4,
-            text: "&quot;&lt;i&gt;Everything we do to manage a business consisting mainly of remote employees is something anyone else could do too.&lt;/i&gt;&lt;p&gt;I would modify quot;anyone elsequot; to quot;anyone else enlightened enoughquot;. Big difference.&lt;p&gt;It's still amazing how many managers/leaders are so bad at managing/leading that all the tools in the world wouldn't make a bit of difference. You know who they are, the people for whom:&lt;p&gt;&lt;pre&gt;&lt;code&gt;  perceived activity = progress\n  meetings = progress\n  being there = progress\n  lines of code = progress\n  check marks = completion\n  social skills = competence\n  perception = reality\n  what's on the surface = what's underneath\n  # of tasks completed = an acceptable metric\n  successful testing = quality software\n  smiling customers = satisfaction\n  90% complete = only 10% more to go\n&lt;/code&gt;&lt;/pre&gt;\nGood managers know better. So they can take advantage of OP's tools.&lt;p&gt;The technology for managing remotely is clearly ahead of the people who would most benefit from it. I look forward the the day when managers catch up and quot;get itquot;.&quot;",
-            time: 1325340291,
-            type: 'comment'
-            },
-        ],
-        parent: 2,
-        text: "&quot;&lt;i&gt;Everything we do to manage a business consisting mainly of remote employees is something anyone else could do too.&lt;/i&gt;&lt;p&gt;I would modify quot;anyone elsequot; to quot;anyone else enlightened enoughquot;. Big difference.&lt;p&gt;It's still amazing how many managers/leaders are so bad at managing/leading that all the tools in the world wouldn't make a bit of difference. You know who they are, the people for whom:&lt;p&gt;&lt;pre&gt;&lt;code&gt;  perceived activity = progress\n  meetings = progress\n  being there = progress\n  lines of code = progress\n  check marks = completion\n  social skills = competence\n  perception = reality\n  what's on the surface = what's underneath\n  # of tasks completed = an acceptable metric\n  successful testing = quality software\n  smiling customers = satisfaction\n  90% complete = only 10% more to go\n&lt;/code&gt;&lt;/pre&gt;\nGood managers know better. So they can take advantage of OP's tools.&lt;p&gt;The technology for managing remotely is clearly ahead of the people who would most benefit from it. I look forward the the day when managers catch up and quot;get itquot;.&quot;",
-        time: 1325340291,
-        type: 'comment'
-        },
-        {
-        by: 'edw519 comment reply 2',
-        id: 5,
-        comments: [],
-        parent: 2,
-        text: "Okey dokey. I clicked on this thinking \"hell yeah!\" and stopped short of agreeing after reading it. Why? Because although I agree with the author, his argument is too shallow.<p>Here's the thing: <i>delegating to remote workers is going to be the critical skill of the first part of the 21st century, and it's not as simple as black and white.</i><p>So it's not just \"do it all the time\" or \"only use local help\" It's much, much, much more complicated. I work with a lot of technology companies, and I've seen them kill perfectly good projects by poorly-configured remote worker configurations. If you don't know what you're doing, you're better off with 4 guys working in the same room than 40 guys working all over the world. See \"The Mythical Man-Month\" (<a href=\"http://www.hn-books.com/Books/The-Mythical-Man-Month.htm\" rel=\"nofollow\">http://www.hn-books.com/Books/The-Mythical-Man-Month.htm</a>) Technology labor is not fungible. The social dynamics of teams physically co-located can create powerful momentum. Serendipity is about 20 times harder to do over a telephone.<p>\"Get up to speed on remote working practices\" contains a lot of nuance. For instance, I've seen teams fly in remote workers for the first few sprints of a project, then going \"truly remote\" once the rhythm and cadence was established. I've seen teams pair up with each pair working in a different location. I've seen teams work mirror configurations where they still paired up, but each pair was separated. Each of these setups (and many more) have their advantages and disadvantages.<p>So yes, by all means, leverage the terrific talent and resources available to you around the world. But don't read a slogan and go running out to shoot your foot off. Take some time and figure out what kind of company you are, what kind of culture you have, and what kinds of projects you do. Then grow and evolve your remote working to fit in with that. Don't be the guy who already has the solution and is just looking for the problem. Remote working is the key to the new century, but it's nowhere as simple as flipping a light switch.Okey dokey. I clicked on this thinking quot;hell yeah!quot; and stopped short of agreeing after reading it. Why? Because although I agree with the author, his argument is too shallow.&lt;p&gt;Here's the thing: &lt;i&gt;delegating to remote workers is going to be the critical skill of the first part of the 21st century, and it's not as simple as black and white.&lt;/i&gt;&lt;p&gt;So it's not just quot;do it all the timequot; or quot;only use local helpquot; It's much, much, much more complicated. I work with a lot of technology companies, and I've seen them kill perfectly good projects by poorly-configured remote worker configurations. If you don't know what you're doing, you're better off with 4 guys working in the same room than 40 guys working all over the world. See quot;The Mythical Man-Monthquot; (&lt;a href=quot;http://www.hn-books.com/Books/The-Mythical-Man-Month.htmquot; rel=quot;nofollowquot;&gt;http://www.hn-books.com/Books/The-Mythical-Man-Month.htm&lt;/a&gt;) Technology labor is not fungible. The social dynamics of teams physically co-located can create powerful momentum. Serendipity is about 20 times harder to do over a telephone.&lt;p&gt;quot;Get up to speed on remote working practicesquot; contains a lot of nuance. For instance, I've seen teams fly in remote workers for the first few sprints of a project, then going quot;truly remotequot; once the rhythm and cadence was established. I've seen teams pair up with each pair working in a different location. I've seen teams work mirror configurations where they still paired up, but each pair was separated. Each of these setups (and many more) have their advantages and disadvantages.&lt;p&gt;So yes, by all means, leverage the terrific talent and resources available to you around the world. But don't read a slogan and go running out to shoot your foot off. Take some time and figure out what kind of company you are, what kind of culture you have, and what kinds of projects you do. Then grow and evolve your remote working to fit in with that. Don't be the guy who already has the solution and is just looking for the problem. Remote working is the key to the new century, but it's nowhere as simple as flipping a light switch.",
-        time: 1325341409,
-        type: 'comment'
-        },
-      ],
-      parent: 1,
-      text: "&quot;&lt;i&gt;Everything we do to manage a business consisting mainly of remote employees is something anyone else could do too.&lt;/i&gt;&lt;p&gt;I would modify quot;anyone elsequot; to quot;anyone else enlightened enoughquot;. Big difference.&lt;p&gt;It's still amazing how many managers/leaders are so bad at managing/leading that all the tools in the world wouldn't make a bit of difference. You know who they are, the people for whom:&lt;p&gt;&lt;pre&gt;&lt;code&gt;  perceived activity = progress\n  meetings = progress\n  being there = progress\n  lines of code = progress\n  check marks = completion\n  social skills = competence\n  perception = reality\n  what's on the surface = what's underneath\n  # of tasks completed = an acceptable metric\n  successful testing = quality software\n  smiling customers = satisfaction\n  90% complete = only 10% more to go\n&lt;/code&gt;&lt;/pre&gt;\nGood managers know better. So they can take advantage of OP's tools.&lt;p&gt;The technology for managing remotely is clearly ahead of the people who would most benefit from it. I look forward the the day when managers catch up and quot;get itquot;.&quot;",
-      time: 1325340291,
-      type: 'comment'
-      },
-      {
-      by: 'DanielBMarkham',
-      id: 3,
-      comments: [
-        {
-          by: 'reply Daniel 1',
-          id: 6,
-          comments: [],
-          parent: 3,
-          text: "&quot;&lt;i&gt;Everything we do to manage a business consisting mainly of remote employees is something anyone else could do too.&lt;/i&gt;&lt;p&gt;I would modify quot;anyone elsequot; to quot;anyone else enlightened enoughquot;. Big difference.&lt;p&gt;It's still amazing how many managers/leaders are so bad at managing/leading that all the tools in the world wouldn't make a bit of difference. You know who they are, the people for whom:&lt;p&gt;&lt;pre&gt;&lt;code&gt;  perceived activity = progress\n  meetings = progress\n  being there = progress\n  lines of code = progress\n  check marks = completion\n  social skills = competence\n  perception = reality\n  what's on the surface = what's underneath\n  # of tasks completed = an acceptable metric\n  successful testing = quality software\n  smiling customers = satisfaction\n  90% complete = only 10% more to go\n&lt;/code&gt;&lt;/pre&gt;\nGood managers know better. So they can take advantage of OP's tools.&lt;p&gt;The technology for managing remotely is clearly ahead of the people who would most benefit from it. I look forward the the day when managers catch up and quot;get itquot;.&quot;",
-          time: 1325340291,
-          type: 'comment'
-        },
-        {
-          by: 'reply Daniel 2',
-          id: 7,
-          comments: [],
-          parent: 3,
-          text: "Okey dokey. I clicked on this thinking \"hell yeah!\" and stopped short of agreeing after reading it. Why? Because although I agree with the author, his argument is too shallow.<p>Here's the thing: <i>delegating to remote workers is going to be the critical skill of the first part of the 21st century, and it's not as simple as black and white.</i><p>So it's not just \"do it all the time\" or \"only use local help\" It's much, much, much more complicated. I work with a lot of technology companies, and I've seen them kill perfectly good projects by poorly-configured remote worker configurations. If you don't know what you're doing, you're better off with 4 guys working in the same room than 40 guys working all over the world. See \"The Mythical Man-Month\" (<a href=\"http://www.hn-books.com/Books/The-Mythical-Man-Month.htm\" rel=\"nofollow\">http://www.hn-books.com/Books/The-Mythical-Man-Month.htm</a>) Technology labor is not fungible. The social dynamics of teams physically co-located can create powerful momentum. Serendipity is about 20 times harder to do over a telephone.<p>\"Get up to speed on remote working practices\" contains a lot of nuance. For instance, I've seen teams fly in remote workers for the first few sprints of a project, then going \"truly remote\" once the rhythm and cadence was established. I've seen teams pair up with each pair working in a different location. I've seen teams work mirror configurations where they still paired up, but each pair was separated. Each of these setups (and many more) have their advantages and disadvantages.<p>So yes, by all means, leverage the terrific talent and resources available to you around the world. But don't read a slogan and go running out to shoot your foot off. Take some time and figure out what kind of company you are, what kind of culture you have, and what kinds of projects you do. Then grow and evolve your remote working to fit in with that. Don't be the guy who already has the solution and is just looking for the problem. Remote working is the key to the new century, but it's nowhere as simple as flipping a light switch.Okey dokey. I clicked on this thinking quot;hell yeah!quot; and stopped short of agreeing after reading it. Why? Because although I agree with the author, his argument is too shallow.&lt;p&gt;Here's the thing: &lt;i&gt;delegating to remote workers is going to be the critical skill of the first part of the 21st century, and it's not as simple as black and white.&lt;/i&gt;&lt;p&gt;So it's not just quot;do it all the timequot; or quot;only use local helpquot; It's much, much, much more complicated. I work with a lot of technology companies, and I've seen them kill perfectly good projects by poorly-configured remote worker configurations. If you don't know what you're doing, you're better off with 4 guys working in the same room than 40 guys working all over the world. See quot;The Mythical Man-Monthquot; (&lt;a href=quot;http://www.hn-books.com/Books/The-Mythical-Man-Month.htmquot; rel=quot;nofollowquot;&gt;http://www.hn-books.com/Books/The-Mythical-Man-Month.htm&lt;/a&gt;) Technology labor is not fungible. The social dynamics of teams physically co-located can create powerful momentum. Serendipity is about 20 times harder to do over a telephone.&lt;p&gt;quot;Get up to speed on remote working practicesquot; contains a lot of nuance. For instance, I've seen teams fly in remote workers for the first few sprints of a project, then going quot;truly remotequot; once the rhythm and cadence was established. I've seen teams pair up with each pair working in a different location. I've seen teams work mirror configurations where they still paired up, but each pair was separated. Each of these setups (and many more) have their advantages and disadvantages.&lt;p&gt;So yes, by all means, leverage the terrific talent and resources available to you around the world. But don't read a slogan and go running out to shoot your foot off. Take some time and figure out what kind of company you are, what kind of culture you have, and what kinds of projects you do. Then grow and evolve your remote working to fit in with that. Don't be the guy who already has the solution and is just looking for the problem. Remote working is the key to the new century, but it's nowhere as simple as flipping a light switch.",
-          time: 1325341409,
-          type: 'comment'
-        },
-      ],
-      parent: 1,
-      text: "Okey dokey. I clicked on this thinking \"hell yeah!\" and stopped short of agreeing after reading it. Why? Because although I agree with the author, his argument is too shallow.<p>Here's the thing: <i>delegating to remote workers is going to be the critical skill of the first part of the 21st century, and it's not as simple as black and white.</i><p>So it's not just \"do it all the time\" or \"only use local help\" It's much, much, much more complicated. I work with a lot of technology companies, and I've seen them kill perfectly good projects by poorly-configured remote worker configurations. If you don't know what you're doing, you're better off with 4 guys working in the same room than 40 guys working all over the world. See \"The Mythical Man-Month\" (<a href=\"http://www.hn-books.com/Books/The-Mythical-Man-Month.htm\" rel=\"nofollow\">http://www.hn-books.com/Books/The-Mythical-Man-Month.htm</a>) Technology labor is not fungible. The social dynamics of teams physically co-located can create powerful momentum. Serendipity is about 20 times harder to do over a telephone.<p>\"Get up to speed on remote working practices\" contains a lot of nuance. For instance, I've seen teams fly in remote workers for the first few sprints of a project, then going \"truly remote\" once the rhythm and cadence was established. I've seen teams pair up with each pair working in a different location. I've seen teams work mirror configurations where they still paired up, but each pair was separated. Each of these setups (and many more) have their advantages and disadvantages.<p>So yes, by all means, leverage the terrific talent and resources available to you around the world. But don't read a slogan and go running out to shoot your foot off. Take some time and figure out what kind of company you are, what kind of culture you have, and what kinds of projects you do. Then grow and evolve your remote working to fit in with that. Don't be the guy who already has the solution and is just looking for the problem. Remote working is the key to the new century, but it's nowhere as simple as flipping a light switch.Okey dokey. I clicked on this thinking quot;hell yeah!quot; and stopped short of agreeing after reading it. Why? Because although I agree with the author, his argument is too shallow.&lt;p&gt;Here's the thing: &lt;i&gt;delegating to remote workers is going to be the critical skill of the first part of the 21st century, and it's not as simple as black and white.&lt;/i&gt;&lt;p&gt;So it's not just quot;do it all the timequot; or quot;only use local helpquot; It's much, much, much more complicated. I work with a lot of technology companies, and I've seen them kill perfectly good projects by poorly-configured remote worker configurations. If you don't know what you're doing, you're better off with 4 guys working in the same room than 40 guys working all over the world. See quot;The Mythical Man-Monthquot; (&lt;a href=quot;http://www.hn-books.com/Books/The-Mythical-Man-Month.htmquot; rel=quot;nofollowquot;&gt;http://www.hn-books.com/Books/The-Mythical-Man-Month.htm&lt;/a&gt;) Technology labor is not fungible. The social dynamics of teams physically co-located can create powerful momentum. Serendipity is about 20 times harder to do over a telephone.&lt;p&gt;quot;Get up to speed on remote working practicesquot; contains a lot of nuance. For instance, I've seen teams fly in remote workers for the first few sprints of a project, then going quot;truly remotequot; once the rhythm and cadence was established. I've seen teams pair up with each pair working in a different location. I've seen teams work mirror configurations where they still paired up, but each pair was separated. Each of these setups (and many more) have their advantages and disadvantages.&lt;p&gt;So yes, by all means, leverage the terrific talent and resources available to you around the world. But don't read a slogan and go running out to shoot your foot off. Take some time and figure out what kind of company you are, what kind of culture you have, and what kinds of projects you do. Then grow and evolve your remote working to fit in with that. Don't be the guy who already has the solution and is just looking for the problem. Remote working is the key to the new century, but it's nowhere as simple as flipping a light switch.",
-      time: 1325341409,
-      type: 'comment'
+        id: 1,
+        by: 'user 1',
+        descendants: 234,
+        title: 'Title first article',
+        comments: [1,2],
+        score: 481,
+        time: 325335277,
+        url: 'http://google.com'
       }
     ],
-    score: 481,
-    time: 325335277,
-    type: 'story',
-    title: 'Stop whining and start hiring remote workers',
-    url: 'http://37signals.com/svn/posts/3064-stop-whining-and-start-hiring-remote-workers'
-  }
+    comments: [
+      {
+        id: 1,
+        by: 'user 2',
+        comments: [
+          {
+            id: 4,
+            by: 'user 1',
+            comments: [
+              {
+                id: 5,
+                by: 'user 2',
+                comments: [],
+                text: "Comment Body",
+                time: 1325340291,
+                parent: 4
+              }
+            ],
+            text: "Comment Body",
+            time: 1325340291,
+            parent: 1
+          }
+        ],
+        text: "Comment Body",
+        time: 1325340291,
+        parent: 1
+      },
+      {
+        id: 2,
+        by: 'user 3',
+        comments: [],
+        text: "Comment Body",
+        time: 1325340291,
+        parent: 1
+      },
+      {
+        id: 3,
+        by: 'user 4',
+        comments: [],
+        text: "Comment Body",
+        time: 1325340291,
+        parent: 2
+      }
+    ]
+  }  
 }
 
-ReactDOM.render(<App item={state.item} />, document.getElementById('root'));
+ReactDOM.render(<App story={state.entities.stories[0]} comments={state.entities.comments} />, document.getElementById('root'));
 registerServiceWorker();
