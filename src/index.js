@@ -33,17 +33,14 @@ const state = {
                 comments: [],
                 text: "Comment Body",
                 time: 1325340291,
-                parent: 4
               }
             ],
             text: "Comment Body",
             time: 1325340291,
-            parent: 1
           }
         ],
         text: "Comment Body",
         time: 1325340291,
-        parent: 1
       },
       {
         id: 2,
@@ -51,7 +48,6 @@ const state = {
         comments: [],
         text: "Comment Body",
         time: 1325340291,
-        parent: 1
       },
       {
         id: 3,
@@ -59,7 +55,6 @@ const state = {
         comments: [],
         text: "Comment Body",
         time: 1325340291,
-        parent: 2
       }
     ]
   }  
