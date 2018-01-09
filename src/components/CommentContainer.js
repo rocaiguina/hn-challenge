@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 const Comment = (props) => (
   <div className="comment padding-1h">
@@ -7,15 +7,13 @@ const Comment = (props) => (
       <span><i className="fa fa-fw fa-hourglass-o"></i>{props.time}</span>
     </div>
     <p>{props.text}</p>
-    <CommentContainer comments={props.comments}/>
   </div>
 )
  
-class CommentContainer extends React.Component {
+class CommentContainer extends Component {
   render () {
-  // let comments = getComments(this.props.comments)
-  return console.log(this.props.comments)
-  // return comments.map(comment => <Comment key={comment.id} {...comment} />) 
+    return this.props.comments.map(comment => <Comment key={comment.id} {...comment} />) 
+    //return null
   }
 }
 

@@ -1,16 +1,18 @@
 import React, {Component} from 'react'
-// import CommentContainer from './CommentContainer.js';
+import CommentContainer from './CommentContainer';
 import {connect} from 'react-redux'
-import {fetchStory} from '../reducers/story.js'
+import { getComments, getStory } from '../actions'
 
 class Story extends Component {
   componentDidMount() {
-    this.props.fetchStory()
+    this.props.fetchStory(3410773)
+      .then(() => {
+        this.props.fetchComments(this.props.story.kids)
+      })
   }
   render () {
     return (    
       <div className="story">
-      {this.props.comments}
       <div className="story__header">
         <h1 className="story__title">{this.props.story.title}</h1>
         <div className="story__metadata margin-1v">
@@ -24,15 +26,25 @@ class Story extends Component {
         </div>
       </div>
       <div className="story__comments">
-        {/* <CommentContainer comments= {this.props.story.comments} /> */}
-        {this.props.story.comments}
+        <CommentContainer comments={this.props.comments} />
       </div>
     </div>
     )
   } 
 }
 
-export default connect(
-  (state) => ({story: state.story}),
-  {fetchStory}
-)(Story)
+function mapStateToProps (state) {
+  return {
+    story: state.story,
+    comments: state.comment.items
+  }
+}
+
+function mapDispatchToProps (dispatch) {
+  return {
+    fetchStory: (id) => dispatch(getStory(id)),
+    fetchComments: (ids) => dispatch(getComments(ids))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Story)
